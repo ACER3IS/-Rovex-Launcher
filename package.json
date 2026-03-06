@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Официальный лаунчер проекта ROVEX",
     "main": "src/app.js",
-    "author": "ROVEX Team",
+    "author": "ROVEX Team Riptiaz/Boulldogo/Vexato/Luuxis",
     "env": "azuriom",
     "settings": "https://rovexplay.ru",
     "scripts": {
