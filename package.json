@@ -5,7 +5,7 @@
     "description": "Официальный лаунчер проекта ROVEX",
     "main": "src/app.js",
     "author": "ROVEX Team Riptiaz/Boulldogo/Vexato/Luuxis",
-    "env": "azuriom",
+    "env": "apanel",
     "settings": "https://rovexplay.ru",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
