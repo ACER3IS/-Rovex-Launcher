@@ -1,0 +1,31 @@
+name: Build ROVEX Launcher Windows
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build-windows:
+    runs-on: windows-2022
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Windows EXE
+        run: |
+          npm run build:win -- --publish never
+
+      - name: Upload ready-to-run EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: RovexLauncher-Windows
+          path: dist/win-unpacked/ROVEX\ Launcher.exe
