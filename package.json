@@ -1,7 +1,7 @@
 {
     "name": "rovex-launcher",
     "productName": "ROVEX Launcher",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Официальный лаунчер проекта ROVEX",
     "main": "src/app.js",
     "author": "ROVEX Team Riptiaz/Boulldogo/Vexato/Luuxis",
