@@ -28,4 +28,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: RovexLauncher-Windows
-          path: dist/win-unpacked/ROVEX\ Launcher.exe
+          path: dist/win-unpacked/
