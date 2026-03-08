@@ -1,7 +1,7 @@
 {
   "name": "rovex-launcher",
   "productName": "ROVEX Launcher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Официальный лаунчер проекта ROVEX",
   "main": "src/app.js",
   "author": "ROVEX Team Riptiaz/Boulldogo/Vexato/Luuxis",
@@ -10,7 +10,8 @@
 
   "scripts": {
     "start": "cross-env-shell NODE_ENV=dev electron .",
-    "build": "electron-builder --win portable",
+    "build": "electron-builder --win portable --publish never",
+    "build:win": "electron-builder --win portable --publish never",
     "dev": "cross-env-shell DEV_TOOL=open nodemon --ignore AppData/ --ignore node_modules/ --legacy-watch --exec npm start",
     "icon": "node build.js --icon=https://rovexplay.ru/icon.png"
   },
