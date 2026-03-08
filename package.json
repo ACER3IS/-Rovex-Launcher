@@ -1,17 +1,17 @@
 {
   "name": "rovex-launcher",
   "productName": "ROVEX Launcher",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "Официальный лаунчер проекта ROVEX",
   "main": "src/app.js",
-  "author": "ROVEX Team Riptiaz/Boulldogo/Vexato/Luuxis",
+  "author": "ROVEX Team",
   "env": "panel",
   "settings": "https://rovexplay.ru",
 
   "scripts": {
     "start": "cross-env-shell NODE_ENV=dev electron .",
-    "build": "electron-builder --win portable --publish never",
-    "build:win": "electron-builder --win portable --publish never",
+    "build": "node build.js --obf=true --build=win",
+    "build:win": "node build.js --obf=true --build=win",
     "dev": "cross-env-shell DEV_TOOL=open nodemon --ignore AppData/ --ignore node_modules/ --legacy-watch --exec npm start",
     "icon": "node build.js --icon=https://rovexplay.ru/icon.png"
   },
@@ -38,10 +38,6 @@
 
   "license": "CC0",
 
-  "nodemonConfig": {
-    "ext": "js,html,css"
-  },
-
   "dependencies": {
     "@electron/rebuild": "^4.0.3",
     "discord-rpc": "^4.0.1",
@@ -61,10 +57,5 @@
     "jimp": "^0.22.12",
     "nodemon": "^3.1.9",
     "png2icons": "^2.0.1"
-  },
-
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ACER3IS/rovex-launcher.git"
   }
 }
