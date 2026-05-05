@@ -1,12 +1,12 @@
 {
   "name": "rovex-launcher",
   "productName": "ROVEX Launcher",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Официальный лаунчер проекта ROVEX",
   "main": "src/app.js",
   "author": "ROVEX Team",
   "env": "panel",
-  "settings": "https://rovexplay.ru",
+  "settings": "https://panel.rovexplay.ru",
 
   "scripts": {
     "start": "cross-env-shell NODE_ENV=dev electron .",
